@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsyAgregator", "PsyAgregator\PsyAgregator.csproj", "{99A3D5B8-0AC4-49BA-A256-32A5F51F6CB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A3D5B8-0AC4-49BA-A256-32A5F51F6CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A3D5B8-0AC4-49BA-A256-32A5F51F6CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A3D5B8-0AC4-49BA-A256-32A5F51F6CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A3D5B8-0AC4-49BA-A256-32A5F51F6CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C58A12B6-9A9A-4618-8FAC-B2048B4DEFCD}
+	EndGlobalSection
+EndGlobal
