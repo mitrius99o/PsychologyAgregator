@@ -21,18 +21,18 @@ namespace PsyAgregator.Data
             modelBuilder.Entity<Psychologist>().HasData(
                  new Psychologist
                  {
-                     PhotoID = 1,
+                     PsychologistID = 1,
                      FirstName = "Татьяна",
                      MidName = "Викторовна",
                      LastName = "Дымова",
-                     TelNumber=89213567848,
+                     TelNumber = 89213567848,
                      Email = "psy@m.com",
                      PhotoFileName = "actress.jpg",
-                     ImageMimeType = "image/jpeg"   
+                     ImageMimeType = "image/jpeg"
                  },
                 new Psychologist
                 {
-                    PhotoID = 2,
+                    PsychologistID = 2,
                     FirstName = "Алекс",
                     MidName = "Викторович",
                     LastName = "Личёв",
@@ -40,7 +40,7 @@ namespace PsyAgregator.Data
                     Email = "psy1@m.com",
                     PhotoFileName = "actor.jpg",
                     ImageMimeType = "image/jpeg"
-                },
+                });
         }
     }
 }

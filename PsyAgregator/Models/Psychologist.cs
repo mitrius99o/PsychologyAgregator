@@ -7,6 +7,7 @@ namespace PsyAgregator.Models
 {
     public class Psychologist
     {
+        public int PsychologistID { get; set; }
         public string FirstName { get; set; }
         public string MidName { get; set; }
         public string LastName { get; set; }

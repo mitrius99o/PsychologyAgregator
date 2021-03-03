@@ -6,17 +6,19 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using PsyAgregator.Data;
 
 namespace PsyAgregator
 {
     public class Startup
     {
+        private IConfiguration _configuration;
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -24,13 +26,19 @@ namespace PsyAgregator
         
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<PsychologistContext>(options =>
+                  options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
         }
 
         
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, PsychologistContext psychologistContext)
         {
+            psychologistContext.Database.EnsureDeleted();
+            psychologistContext.Database.EnsureCreated();
+
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
