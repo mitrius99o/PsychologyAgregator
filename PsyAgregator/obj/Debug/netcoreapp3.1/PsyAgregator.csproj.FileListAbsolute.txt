@@ -151,3 +151,4 @@ C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\n
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\package-lock.json
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\package.json
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Psychologist\GetPsychologistList.cshtml.g.cs

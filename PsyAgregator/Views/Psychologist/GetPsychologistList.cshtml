@@ -1,0 +1,20 @@
+﻿@model IEnumerable<PsyAgregator.Models.Psychologist>
+@{
+    ViewData["Title"] = "GetPsychologistList";
+}
+
+<h1>Каталог специалистов</h1>
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="photo-index-card">
+            <div>
+                <span class="display">
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                    @Html.DisplayFor(model => item.Email)
+                    <img class="photo-display-img" src="~/images/@item.PhotoFileName" alt="Sample Image" />
+                </span>
+            </div>
+        </div>
+    }
+</div>

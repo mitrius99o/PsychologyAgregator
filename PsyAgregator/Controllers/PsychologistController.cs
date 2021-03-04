@@ -19,5 +19,12 @@ namespace PsyAgregator.Controllers
             _context = context;
             _environment = environment;
         }
+
+        public IActionResult GetPsychologistList()
+        {
+            return View(_context.Psychologists.ToList());
+        }
+
+        
     }
 }
