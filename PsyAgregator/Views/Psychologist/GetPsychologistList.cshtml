@@ -10,9 +10,14 @@
         <div class="photo-index-card">
             <div>
                 <span class="display">
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                    @Html.DisplayFor(model => item.Email)
+
                     <img class="photo-display-img" src="~/images/@item.PhotoFileName" alt="Sample Image" />
+                    <br>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                    @Html.DisplayFor(modelItem => item.MidName)
+                    @Html.DisplayFor(modelItem => item.LastName)
+                    <br>
+                    @Html.DisplayFor(model => item.Email)
                 </span>
             </div>
         </div>
