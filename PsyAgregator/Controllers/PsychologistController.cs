@@ -22,6 +22,7 @@ namespace PsyAgregator.Controllers
 
         public IActionResult GetPsychologistList()
         {
+            _context.SaveChanges();
             return View(_context.Psychologists.ToList());
         }
 

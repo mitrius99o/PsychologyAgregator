@@ -26,6 +26,7 @@ namespace PsyAgregator
         
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddDbContext<PsychologistContext>(options =>
                   options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
