@@ -177,3 +177,4 @@ C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\n
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Psychologist\AboutPsychologist.cshtml.g.cs

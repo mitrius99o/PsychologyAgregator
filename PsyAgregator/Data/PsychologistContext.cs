@@ -40,6 +40,17 @@ namespace PsyAgregator.Data
                     Email = "psy1@m.com",
                     PhotoFileName = "actor.jpg",
                     ImageMimeType = "image/jpeg"
+                },
+                new Psychologist
+                {
+                    PsychologistID = 3,
+                    FirstName = "Михаил",
+                    MidName = "Андреевич",
+                    LastName = "Душнилов",
+                    TelNumber = 89213167868,
+                    Email = "psy2@m.com",
+                    PhotoFileName = "psychologist.jpg",
+                    ImageMimeType = "image/jpeg"
                 });
         }
     }

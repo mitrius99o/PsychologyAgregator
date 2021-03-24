@@ -6,17 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using PsyAgregator.Models;
 using PsyAgregator.Data;
+using PsyAgregator.Repositories;
 
 namespace PsyAgregator.Controllers
 {
     public class PsychologistController : Controller
     {
         private PsychologistContext _context;
+        private IPsychologistRepository _repository;
         private IHostingEnvironment _environment;
 
-        public PsychologistController(PsychologistContext context, IHostingEnvironment environment)
+        public PsychologistController(IPsychologistRepository repository, PsychologistContext context, IHostingEnvironment environment)
         {
             _context = context;
+            _repository = repository;
             _environment = environment;
         }
 
@@ -26,6 +29,16 @@ namespace PsyAgregator.Controllers
             return View(_context.Psychologists.ToList());
         }
 
-        
+        public IActionResult AboutPsychologist(int id)
+        {
+            var psychologist = _repository.GetPsychologistById(id);
+            if (psychologist == null)
+            {
+                return NotFound();
+            }
+            return View(psychologist);
+        }
+
+
     }
 }

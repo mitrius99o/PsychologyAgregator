@@ -18,6 +18,8 @@
                     @Html.DisplayFor(modelItem => item.LastName)
                     <br>
                     @Html.DisplayFor(model => item.Email)
+                    <br>
+                    <a asp-action="AboutPsychologist" asp-route-id="@item.PsychologistID">Подробнее о специалисте</a>
                 </span>
             </div>
         </div>
