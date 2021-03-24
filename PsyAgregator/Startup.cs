@@ -28,11 +28,11 @@ namespace PsyAgregator
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IPsychologistRepository, PsychologistRepository>();
-            //services.AddDbContext<PsychologistContext>(options =>
-            //options.UseSqlite("Data Source=psychologists.db"));
-
             services.AddDbContext<PsychologistContext>(options =>
-                  options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlite("Data Source=psychologists.db"));
+
+            //services.AddDbContext<PsychologistContext>(options =>
+            //      options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
