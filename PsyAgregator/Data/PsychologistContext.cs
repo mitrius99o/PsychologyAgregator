@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PsyAgregator.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace PsyAgregator.Data
 {
-    public class PsychologistContext:DbContext
+    public class PsychologistContext: DbContext
     {
         public PsychologistContext(DbContextOptions<PsychologistContext> options):base(options)
         {
@@ -15,6 +16,7 @@ namespace PsyAgregator.Data
         }
 
         public DbSet<Psychologist> Psychologists { get; set; }
+        //public DbSet<User> PsychologySkyUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

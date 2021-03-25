@@ -3,46 +3,45 @@
 }
 
 <div class="container">
-        <div class="photo-index-card">
+        <button class="photo-index-card">
             <div>
                 <span class="display">
-                    <img class="photo-display-img" src="~/images/therapy.jpg" alt="Sample Image" />
                     @Html.ActionLink("О важности терапии", "Importance")
+                    <img class="photo-display-img" src="~/images/therapy.jpg" alt="Sample Image" />
                 </span>
             </div>
-        </div>
-        <div class="photo-index-card">
+        </button>
+        <button class="photo-index-card">
             <div>
                 <span class="display">
-                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
                     @Html.ActionLink("Что такое терапия?", "AboutTherapy")
+                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
                 </span>
             </div>
-        </div>
-    <br><br>
-            <div class="photo-index-card">
-                <div>
-                    <span class="display">
-                        <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
-                        @Html.ActionLink("Как работает сайт?", "SiteWork")
-                    </span>
-                </div>
+        </button>
+        <button class="photo-index-card">
+            <div>
+                <span class="display">
+                    @Html.ActionLink("Как работает сайт?", "SiteWork")
+                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
+                </span>
             </div>
-            <div class="photo-index-card">
-                <div>
-                    <span class="display">
-                        <img class="photo-display-img" src="~/images/mind-river.jpg" alt="Sample Image" />
-                        @Html.ActionLink("Прохождение тестирования", "Test")
-                    </span>
-                </div>
+        </button>
+        <button class="photo-index-card">
+            <div>
+                <span class="display">
+                    @Html.ActionLink("Прохождение тестирования", "Test")
+                    <img class="photo-display-img" src="~/images/mind-river.jpg" alt="Sample Image" />
+                </span>
             </div>
-            <div class="photo-index-card">
-                <div>
-                    <span class="display">
-                        <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
-                        @Html.ActionLink("О нас", "AboutUs")
-                    </span>
-                </div>
+        </button>
+        <button class="photo-index-card">
+            <div>
+                <span class="display">
+                    @Html.ActionLink("О нас", "AboutUs")
+                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
+                </span>
             </div>
+        </button>
 </div>
 

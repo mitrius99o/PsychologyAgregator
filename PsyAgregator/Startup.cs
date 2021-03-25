@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PsyAgregator.Data;
 using PsyAgregator.Repositories;
+using PsyAgregator.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace PsyAgregator
 {
@@ -27,12 +29,21 @@ namespace PsyAgregator
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IPsychologistRepository, PsychologistRepository>();
-            services.AddDbContext<PsychologistContext>(options =>
-            options.UseSqlite("Data Source=psychologists.db"));
+            services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 7;
+                options.Password.RequireUppercase = true;
 
+                options.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<PsychologistContext>();
+
+            services.AddTransient<IPsychologistRepository, PsychologistRepository>();
             //services.AddDbContext<PsychologistContext>(options =>
-            //      options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+            //options.UseSqlite("Data Source=psychologists.db"));
+
+            services.AddDbContext<PsychologistContext>(options =>
+                  options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddControllersWithViews();
@@ -45,6 +56,7 @@ namespace PsyAgregator
             psychologistContext.Database.EnsureCreated();
 
             app.UseStaticFiles();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
