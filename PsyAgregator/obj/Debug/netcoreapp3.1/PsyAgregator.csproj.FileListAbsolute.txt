@@ -2,7 +2,6 @@ C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\n
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\netcoreapp3.1\PsyAgregator.exe
-C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.csprojAssemblyReference.cache
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.AssemblyInfoInputs.cache
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.AssemblyInfo.cs
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.RazorAssemblyInfo.cache
@@ -184,3 +183,5 @@ C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\bin\Debug\n
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.csproj.CoreCompileInputs.cache
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.csprojAssemblyReference.cache

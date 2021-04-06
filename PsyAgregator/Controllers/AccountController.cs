@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using PsyAgregator.Models;
 using PsyAgregator.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
+
 
 namespace PsyAgregator.Controllers
 {

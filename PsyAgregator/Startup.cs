@@ -13,6 +13,7 @@ using PsyAgregator.Data;
 using PsyAgregator.Repositories;
 using PsyAgregator.Models;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
 namespace PsyAgregator
 {

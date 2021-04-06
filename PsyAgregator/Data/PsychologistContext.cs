@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace PsyAgregator.Data
 {
-    public class PsychologistContext: DbContext
+    public class PsychologistContext: IdentityDbContext<User>
     {
         public PsychologistContext(DbContextOptions<PsychologistContext> options):base(options)
         {
@@ -16,10 +16,12 @@ namespace PsyAgregator.Data
         }
 
         public DbSet<Psychologist> Psychologists { get; set; }
-        //public DbSet<User> PsychologySkyUsers { get; set; }
+        public DbSet<User> PsychologySkyUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Psychologist>().HasData(
                  new Psychologist
                  {

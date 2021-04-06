@@ -8,24 +8,20 @@ namespace PsyAgregator.ViewModels
 {
     public class RegisterViewModel:LoginViewModel
     {
-        [Display(Name = "First Name")]
-        [Required(ErrorMessage = "Please enter your first name")]
+        [Display(Name = "Имя")]
+        [Required(ErrorMessage = "Пожалуйста, введите свое имя")]
         public string FirstName { get; set; }
 
-        [Display(Name = "Last Name")]
-        [Required(ErrorMessage = "Please enter your last name")]
+        [Display(Name = "Фамилия")]
+        [Required(ErrorMessage = "Пожалуйста, введите свою фамилию")]
         public string LastName { get; set; }
 
-        [Display(Name = "Role Name")]
-        [Required(ErrorMessage = "Please select a role")]
-        public string RoleName { get; set; }
-
-        [Display(Name = "Phone Number")]
-        [Required(ErrorMessage = "Please enter your phone number")]
+        [Display(Name = "Номер телефона")]
+        [Required(ErrorMessage = "Пожалуйста, введите номер телефона")]
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
-        [Required(ErrorMessage = "Please enter your email")]
+        [Required(ErrorMessage = "Пожалйста, введите email")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
     }

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <title>PsyсhologySky</title>
-    <link type="text/css" rel="stylesheet" href="~/css/style.css" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <ul class="nav">
@@ -15,12 +19,20 @@
         <li><a href="@Url.Action("SiteWork", "Home")">Как работает сайт?</a></li>
         <li><a href="@Url.Action("Test", "Home")">Прохождение тестирования</a></li>
         <li><a href="@Url.Action("AboutUs", "Home")">О нас</a></li>
-        <li><a href="@Url.Action("Login", "Account")">Вход в личный кабинет</a></li>
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <li><a href="@Url.Action("Login", "Account")">Вход в личный кабинет</a></li>
+}
+        else
+        {
+            <li><a href="@Url.Action("Logout", "Account")">Выход из личного кабинета</a></li>
+}
     </ul>
     <div class="header-container">
         <h1 class="content">PsychologySky - Жизнь без тревог!</h1><br><br>
         @RenderBody()
     </div>
-        <text>Все права защищены. PsyhologySky</text>
+    <text>Все права защищены. PsyhologySky</text>
+    @RenderSection("Scripts", false)
 </body>
 </html>
