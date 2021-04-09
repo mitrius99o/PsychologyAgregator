@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using PsyAgregator.Models;
 using PsyAgregator.Data;
 using PsyAgregator.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PsyAgregator.Controllers
 {
@@ -28,7 +29,7 @@ namespace PsyAgregator.Controllers
             _context.SaveChanges();
             return View(_context.Psychologists.ToList());
         }
-
+        [Authorize]
         public IActionResult AboutPsychologist(int id)
         {
             var psychologist = _repository.GetPsychologistById(id);

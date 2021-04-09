@@ -6,7 +6,7 @@
 <h1>AboutPsychologist</h1>
     <div class="container">
         <div class="photo-index-card-details">
-            
+
             @if (Model.PhotoFileName != null)
             {
                 <div class="photo-display">
@@ -37,6 +37,15 @@
                 </p>
                 <p class="display-field">
                     @Html.DisplayFor(model => model.LastName)
+                </p>
+                <br />
+            </div>
+            <div>
+                <p class="display-label">
+                    @Html.DisplayNameFor(model => model.Email)
+                </p>
+                <p class="display-field">
+                    @Html.DisplayFor(model => model.Email)
                 </p>
                 <br />
             </div>
