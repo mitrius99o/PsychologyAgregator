@@ -21,6 +21,7 @@ namespace PsyAgregator.ViewModels
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
+        [Key]
         [Required(ErrorMessage = "Пожалйста, введите email")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }

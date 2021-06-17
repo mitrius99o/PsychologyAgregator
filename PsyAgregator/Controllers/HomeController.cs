@@ -23,11 +23,6 @@ namespace PsyAgregator.Controllers
             return View();
         }
 
-        public IActionResult SiteWork()
-        {
-            return View();
-        }
-
         public IActionResult Test()
         {
             return View();

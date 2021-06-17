@@ -102,7 +102,6 @@ C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\n
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\PsyAgregator.genruntimeconfig.cache
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Home\Importance.cshtml.g.cs
-C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Home\SiteWork.cshtml.g.cs
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutUs.cshtml.g.cs
 C:\Users\Dmitry\Documents\ASP_NET_Core_MVC\PsyAgregator\PsyAgregator\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutTherapy.cshtml.g.cs

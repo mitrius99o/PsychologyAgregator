@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PsyAgregator.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using PsyAgregator.ViewModels;
 
 namespace PsyAgregator.Data
 {
@@ -16,7 +17,6 @@ namespace PsyAgregator.Data
         }
 
         public DbSet<Psychologist> Psychologists { get; set; }
-        public DbSet<User> PsychologySkyUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
