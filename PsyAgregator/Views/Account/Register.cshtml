@@ -2,55 +2,57 @@
 @{
     ViewData["Title"] = "Register";
 }
+<h1 class="display-5" style="text-align:center;"><b>Регистрация</b></h1>
+
 
 <div class="container">
-    <div class="photo-index-card">
+    <div class="card">
         <form class="submit-form" method="post" enctype="multipart/form-data" asp-action="Register">
             <div asp-validation-summary="ModelOnly"></div>
             <div class="form-group row">
                 <label asp-for="FirstName" class="col-sm-4 col-form-label"></label>
-                <div class="col-sm-6">
+                <div class="card-body">
                     <input asp-for="FirstName" type="text" class="form-control" placeholder="First Name" required>
                     <span asp-validation-for="FirstName"></span>
                 </div>
             </div>
             <div class="form-group row">
                 <label asp-for="LastName" class="col-sm-4 col-form-label"></label>
-                <div class="col-sm-6">
+                <div class="card-body">
                     <input asp-for="LastName" type="text" class="form-control" placeholder="Last Name" required>
                     <span asp-validation-for="LastName"></span>
                 </div>
             </div>
             <div class="form-group row">
                 <label asp-for="PhoneNumber" class="col-sm-4 col-form-label"></label>
-                <div class="col-sm-6">
+                <div class="card-body">
                     <input asp-for="PhoneNumber" type="tel" class="form-control" placeholder="Phone Number" required>
                     <span asp-validation-for="PhoneNumber"></span>
                 </div>
             </div>
             <div class="form-group row">
                 <label asp-for="Email" class="col-sm-4 col-form-label"></label>
-                <div class="col-sm-6">
+                <div class="card-body">
                     <input asp-for="Email" type="email" class="form-control" placeholder="Email" required>
                     <span asp-validation-for="Email"></span>
                 </div>
             </div>
             <div class="form-group row">
                 <label asp-for="UserName" class="col-sm-4 col-form-label"></label>
-                <div class="col-sm-6">
+                <div class="card-body">
                     <input asp-for="UserName" type="tel" class="form-control" placeholder="User Name" required>
                     <span asp-validation-for="UserName"></span>
                 </div>
             </div>
             <div class="form-group row">
                 <label asp-for="Password" class="col-sm-4 col-form-label"></label>
-                <div class="col-sm-6">
+                <div class="card-body">
                     <input asp-for="Password" type="password" class="form-control" placeholder="Password" required>
                     <span asp-validation-for="Password"></span>
                 </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm-10">
+                <div class="card-body">
                     <button type="submit" class="btn btn-success">
                         Register
                     </button>

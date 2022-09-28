@@ -3,27 +3,15 @@
     ViewData["Title"] = "Importance";
 }
 
-<div class="container">
-    <div class="photo-display-content">
-        <p2 style="font-size:40px;
-               font-family:'Times New Roman', Times, serifserif;
-               text-align: center;
-               color: #ebae04;
-               opacity: 1"><b>О том, кто такой психотерапевт</b></p2>
-        <p style="font-size:23px;
-              font-family:'Times New Roman', Times, serifserif;
-              text-align: center;
-              color: #ebae04;
-              opacity: 1">
-            Психотерапевт - специально обученный человек, который
-            помогает рефлексировать, разрешать сложные вопросы из головы, задавать себе
-            правильные вопросы и найти на них ответ. Психолог помогает другим разобраться
-            в себе, лучше ладить с другими, понимать их и себя.
-        </p>
-        <img style="align-content:center; width:60%; height:60%; opacity: 1" src="/images/sun.png" />
-        <br><br>
-        <button>@Html.ActionLink("На главную", "Index")</button>
-        <br><br>
-        <text>Все права защищены. PsyhologySky</text>
+
+    <h1 class="display-4" style="text-align:center;"><b>О том, кто такой психотерапевт</b></h1>
+    <p align="justify" style="margin-left: 15%; margin-right:15%;">
+        Психотерапевт - специально обученный человек, который
+        помогает рефлексировать, разрешать сложные вопросы из головы, задавать себе
+        правильные вопросы и найти на них ответ. Психолог помогает другим разобраться
+        в себе, лучше ладить с другими, понимать их и себя.
+    </p>
+    <img src="~/images/ph1.jpg" style="display:block; margin: auto;">
+    <div class="d-grid gap-2" style="margin:15%;">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-outline-success">На главную</a>
     </div>
-</div>

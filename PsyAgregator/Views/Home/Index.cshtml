@@ -2,46 +2,43 @@
     ViewData["Title"] = "Index";
 }
 
+<h1 class="display-2" style="text-align: center">Вира - Жизнь без тревог</h1>
+<br>
+<br>
 <div class="container">
-        <button class="photo-index-card">
-            <div>
-                <span class="display">
-                    @Html.ActionLink("О важности терапии", "Importance")
-                    <img class="photo-display-img" src="~/images/therapy.jpg" alt="Sample Image" />
-                </span>
-            </div>
-        </button>
-        <button class="photo-index-card">
-            <div>
-                <span class="display">
-                    @Html.ActionLink("Что такое терапия?", "AboutTherapy")
-                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
-                </span>
-            </div>
-        </button>
-        <button class="photo-index-card">
-            <div>
-                <span class="display">
-                    @Html.ActionLink("Как работает сайт?", "SiteWork")
-                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
-                </span>
-            </div>
-        </button>
-        <button class="photo-index-card">
-            <div>
-                <span class="display">
-                    @Html.ActionLink("Прохождение тестирования", "Test")
-                    <img class="photo-display-img" src="~/images/mind-river.jpg" alt="Sample Image" />
-                </span>
-            </div>
-        </button>
-        <button class="photo-index-card">
-            <div>
-                <span class="display">
-                    @Html.ActionLink("О нас", "AboutUs")
-                    <img class="photo-display-img" src="~/images/eye.jpg" alt="Sample Image" />
-                </span>
-            </div>
-        </button>
+    <div class="card" style="width: 13rem;">
+        <img class="photo-display-img" src="~/images/importance.jpg" alt="Sample Image" />
+        <div class="card-body">
+            <a href="@Url.Action("Importance", "Home")" class="btn btn-outline-success">О важности терапии</a>
+        </div>
+    </div>
+    <div class="card" style="width: 13rem;">
+
+        <img class="card-img-top" src="~/images/whstis.jpg" alt="Sample Image" />
+        <div class="card-body">
+            <a href="@Url.Action("AboutTherapy", "Home")" class="btn btn-outline-success">Что такое терапия?</a>
+        </div>
+    </div>
+    <div class="card" style="width: 13rem;">
+
+        <img class="card-img-top" src="~/images/works.jpg" alt="Sample Image" />
+        <div class="card-body">
+            <a href="@Url.Action("SiteWork", "Home")" class="btn btn-outline-success">Принципы работы сайта</a>
+        </div>
+    </div>
+    <div class="card" style="width: 13rem;">
+
+        <img src="~/images/test.jpg" class="card-img-top" alt="Sample Image" />
+        <div class="card-body">
+            <a href="@Url.Action("Test", "Home")" class="btn btn-outline-success">Прохождение тестирования</a>
+        </div>
+    </div>
+    <div class="card" style="width: 13rem;">
+
+        <img class="card-img-top" src="~/images/aboutus.jpg" alt="Sample Image" />
+        <div class="card-body">
+            <a href="@Url.Action("AboutUs", "Home")" class="btn btn-outline-success">О нас</a>
+        </div>
+    </div>
 </div>
 

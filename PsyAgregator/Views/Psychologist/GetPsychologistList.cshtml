@@ -7,18 +7,17 @@
 <div class="container">
     @foreach (var item in Model)
     {
-        <div class="photo-index-card">
+        <div class="card" style="width: 20rem;">
             <div>
-                <span class="display">
-
-                    <img class="photo-display-img" src="~/images/@item.PhotoFileName" alt="Sample Image" />
+                <div class="card-body">
+                    <img class="photo-display-img" src="~/images/psy.jpg" alt="Sample Image" />
                     <br>
                     @Html.DisplayFor(modelItem => item.FirstName)
                     @Html.DisplayFor(modelItem => item.MidName)
                     @Html.DisplayFor(modelItem => item.LastName)
                     <br>
-                    <a asp-action="AboutPsychologist" asp-route-id="@item.PsychologistID">Подробнее о специалисте</a>
-                </span>
+                    <a asp-action="AboutPsychologist" asp-route-id="@item.PsychologistID" class="btn btn-success">Подробнее о специалисте</a>
+                </div>
             </div>
         </div>
     }

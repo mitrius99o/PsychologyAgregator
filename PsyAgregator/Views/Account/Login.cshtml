@@ -4,33 +4,35 @@
     ViewData["Title"] = "Login";
 }
 
+<h1 class="display-5" style="text-align:center;"><b>Вход в личный кабинет</b></h1>
+
 <div class="container">
-    <div class="photo-index-card">
+    <div class="card">
         <form class="submit-form" method="post" enctype="multipart/form-data" asp-action="Login">
             <div asp-validation-summary="ModelOnly"></div>
-            <div class="form-group row">
+            <div class="form-group">
                 <label asp-for="UserName" class="col-sm-3 col-form-label"></label>
-                <div class="col-sm-5">
+                <div class="card-body">
                     <input asp-for="UserName" type="text" class="form-control" placeholder="User Name" required>
                     <span asp-validation-for="UserName"></span>
                 </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group">
                 <label asp-for="Password" class="col-sm-3 col-form-label"></label>
-                <div class="col-sm-5">
-                    <input asp-for="Password" type="password" class="form-control" placeholder="Password" required>
+                <div class="card-body">
+                    <input asp-for="Password" type="password" class="form-control" style="align-self: center;" placeholder="Password" required>
                     <span asp-validation-for="Password"></span>
                 </div>
             </div>
-            <div class="form-group row">
+            <div class="form-group">
                 <div class="form-check">
-                    <input asp-for="RememberMe" type="checkbox" class="checkbox-inline">
+                    <input asp-for="RememberMe" type="checkbox" class="checkbox-inline" style="align-self: center;">
                     <label asp-for="RememberMe" class="form-check-label"></label>
                 </div>
                 <span asp-validation-for="RememberMe"></span>
             </div>
-            <div class="form-group row">
-                <div class="col-sm-10">
+            <div class="form-group">
+                <div class="card-body">
                     <button type="submit" class="btn btn-success">
                         Login
                     </button>
@@ -38,7 +40,7 @@
                         Register
                     </button>
                 </div>
-                <div class="register col-sm-10">Пожалуйста, зарегистрируйтесь, если вы еще не зарегистрированы</div>
+                <div class="card-body">Пожалуйста, зарегистрируйтесь, если вы еще не зарегистрированы</div>
             </div>
         </form>
     </div>
